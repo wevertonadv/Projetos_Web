@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+
+.relogio{
+    height: 100vh; /*Ocupa 100% da altura da tela*/
+    background-color: #1A2466;
+    display: flex; /*Deixa o conteudo lado a lado*/
+    flex-direction:column; /*Coloca o conteudo em forma de coluna pelo flex*/
+    align-items: center; /*Alinhando o conteudo no centro horizontal*/
+    justify-content: center; /*Alinhando no meio da tela*/
+}
+
+.display {
+    background-color: #3950E6;
+    border: 10px solid #00003B;
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 200px; /*Como não usei o display flex, usei o line-height e coloquei o mesmo px do height porque fica no centro*/
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+footer{
+    margin-top: 15px;
+    color: #fff;
+    font-size:1rem;
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+
