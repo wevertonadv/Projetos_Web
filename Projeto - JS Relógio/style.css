@@ -11,7 +11,7 @@
     display: flex; /*Deixa o conteudo lado a lado*/
     flex-direction:column; /*Coloca o conteudo em forma de coluna pelo flex*/
     align-items: center; /*Alinhando o conteudo no centro horizontal*/
-    justify-content: center; /*Alinhando no meio da tela*/
+    justify-content: center; /*Alinhando no meio da tela do jeito horizontal*/
 }
 
 .display {
