@@ -20,19 +20,21 @@
 <body>
 
     <h1> Sistema de multas</h1>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" value="Verificar">
-    <button type="button" onclick="calcular()">Calcular</button>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" > km/h
+    <button type="button" value="Verificar" onclick="calcular()">Calcular</button>
     <div id="res"> Sua velocidade é </div>
     
 
     <script>
         function calcular() {
-         var vel = Number(window.document.getElementById('number'))
-         res.innerHTML = `Sua velocidade atual é ${res}`
+         var txtv = document.getElementById('txtvel')
+         var res = window.document.getElementById('res')
+         var vel = Number(txtv.value)
+         res.innerHTML = `<p>Sua velocidade atual é ${res}</p>`
          if (vel > 60) {
-            res.innerHTML += `Você está multado`
+            res.innerHTML = `<p>Você está multado</p>`
         }
-         res.innerHTML = `Dirija sempre com cuidado ${res}`
+         res.innerHTML = `<p>Dirija sempre com cuidado ${res}</p>`
         }
     </script>
 </body>
