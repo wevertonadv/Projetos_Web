@@ -20,21 +20,21 @@
 <body>
 
     <h1> Sistema de multas</h1>
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" > km/h
-    <button type="button" value="Verificar" onclick="calcular()">Calcular</button>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel" >km/h
+    <input type="button" value="Verificar" onclick="calcular()">
     <div id="res"> Sua velocidade é </div>
     
 
     <script>
         function calcular() {
-         var txtv = document.getElementById('txtvel')
-         var res = window.document.getElementById('res')
-         var vel = Number(txtv.value)
-         res.innerHTML = `<p>Sua velocidade atual é ${res}</p>`
+         var txtv = document.querySelector('input#txtvel') //essa linha é a ligação com com o input name txtvel #valor
+         var res = window.document.querySelector('div#res') // A variavel res está recebendo o valor res        #res
+         var vel = Number(txtv.value) //vou pegar a velocidade e jogar na variavel res                          #veloc
+         res.innerHTML = `<p>Sua velocidade atual é de ${vel}</p>`
          if (vel > 60) {
-            res.innerHTML = `<p>Você está multado</p>`
+            res.innerHTML += `<p>Você está multado</p>`
         }
-         res.innerHTML = `<p>Dirija sempre com cuidado ${res}</p>`
+        res.innerHTML += `<p>Dirija sempre com cuidado ${res}</p>`
         }
     </script>
 </body>

@@ -1,0 +1,36 @@
+* {
+
+}
+
+body {
+    background-color: rgb(77, 168, 248);
+}
+
+header {
+    color: #fff;
+    text-align: center;
+
+}
+
+section {
+    background-color: #fff;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding:15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 50px rgba(125, 243, 131, 0.589);
+}
+
+#imagem {
+    margin-left: 120px;
+}
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+div {
+
+
+}

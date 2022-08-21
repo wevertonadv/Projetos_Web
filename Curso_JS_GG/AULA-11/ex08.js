@@ -9,7 +9,7 @@ console.log("Dirija sempre usando cinto de segurança")
 */
 /*________________________________________________________*/
 // Se a velocidade for maior que 60 é multado. Usando condição simples
-var velocidade = 12;
+var velocidade = 65;
 console.log(`A velocidade so seu carro é ${velocidade}`) //console.log serve para imprimir na tela 
 if (velocidade > 60) { //condição simples é quando não não tem o se não não usa
     console.log("Você ultrapassou a velocidade permitida. MULTADO")
