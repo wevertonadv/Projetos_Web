@@ -10,6 +10,7 @@ function verificar() {
         let fsex = document.getElementsByName('radsex')
         let idade = v_ano - Number(v_idade.value)
         let genero = " "
+        
 
         if (fsex[0].checked) {
             genero = "Homem"

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +16,11 @@
 
         button:hover {
             background: #9838;
-            border-radius:5px;
+            border-radius: 5px;
         }
     </style>
 </head>
+
 <body>
     <h1>Exercicio 4</h1>
     <p>Interagindo com parte do HTML substituindo utilizando o o paragrafo com o Dom</p>
@@ -28,15 +30,16 @@
     <P id="resultado">Seu nome é:</P>
 
     <script>
+
         function clica() {
         var nome = window.prompt("Qual é o seu nome? ")
         var res = window.document.getElementById('resultado')
         
         res.innerHTML = ` Olá ${nome} é um prazer te conhecer! &#x1F596; `
-            
-
-
+          
         }
+        
     </script>
 </body>
+
 </html>
