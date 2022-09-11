@@ -1,0 +1,23 @@
+body {
+
+    background-color: rgb(0, 162, 255);
+    font-family: 'roboto';
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    width: 500px;
+    padding:20px;
+    border-radius:15px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
