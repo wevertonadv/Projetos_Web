@@ -1,0 +1,15 @@
+table{
+    border: 1px  solid black;
+    width: 50%;
+    height: 400px;
+    border-collapse: collapse;
+    padding:10px;
+}
+
+tr, th{
+    border: 1px solid black;
+}
+
+tr{
+    background-color: rgb(198, 199, 201);
+}
