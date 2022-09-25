@@ -11,18 +11,23 @@
     <h1>Calculando dois números:</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2"> <br>
-    <button type="button" value="Somar" onclick="somar()">Somar</button>
+    <input type="button" value="somar" onclick="somar()"></input>
     <div id="res">Resultado</div>
 
     <script>
        function somar() {
-        var tn1 = Number(document.getElementById('txtn1'))
-        var tn2 = Number(document.getElementById('txtn2'))
-        var res    = document.createElement('res')
-        var s = tn1 + tn2
+        var tn1 = document.getElementById('txtn1')
+        var tn2 = document.getElementById('txtn2')
+        var res = document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
 
-        res.innerHTML = (`a soma entre ${tn1} e ${tn2} é igual a ${s}`)
+        res.innerHTML = `a soma entre ${n1} e ${n2} é igual a ${s}`
+
+
        }
+
     </script>
 </body>
 </html>

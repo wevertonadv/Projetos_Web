@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+</head>
+<body>
+<script>
+function fatorial(n){
+    let fat = 1
+    for(let c = n; c > 1; c--){
+        fat *=  c
+    }
+    return fat
+}    
+console.log(fatorial(5))
+
+//5! = 5 x 4 x 3 x 2 x 1 = 120 
+
+function fatorial6(x){
+    let fatt = 1;
+    for(let i = x; i > 1; i--){
+        fatt *=  i
+    }
+    return fatt
+}
+console.log(fatorial6(6))
+</script>
+</body>
+</html>
