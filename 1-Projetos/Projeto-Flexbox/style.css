@@ -1,0 +1,19 @@
+
+.div-pai{
+    display: flex;
+}
+.div1{
+    background-color: aqua;
+    width:150px;
+    height:100px;
+}
+.div2{
+    background-color: black;
+    width:150px;
+    height:100px;
+}
+.div3{
+    background-color: green;
+    width:150px;
+    height:100px;
+}
