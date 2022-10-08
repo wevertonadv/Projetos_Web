@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive; /*Fonte escrita a mão*/
+}
+
+
+
+
+
+html, body {
+    min-height: 100vh; /*Valor minimo da minha altura da view height é 100%*/
+    background-color: rgba(0, 84, 136, 0.24);
+
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(206, 207, 171);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family:var(--fonte5);
+
+}
+
+header p {
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height:2em; /*Espaçamento duplo em cada frase*/
+    padding-left: 30px;
+    font-family:var(--fonte3);
+    font-size: 3.5vh;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+section.imagem{
+    background-color: #3F5E57;
+    color: #fff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    background-attachment: fixed; /*Efeito parallax*/
+}
+
+section.imagem p {
+    display: inline-block; /*Removi o width e coloquei o inline block que se adapta ao tamanho do conteudo*/
+    padding: 5px;
+    background-color:#3f5e576c;
+    text-shadow: 3px 3px 1px black;
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > a {
+    color: rgba(98, 156, 165, 0.445);
+}

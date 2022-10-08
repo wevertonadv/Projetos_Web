@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+</head>
+<body>
+
+    <h1>Tratamento de dados</h1>
+
+    <script>
+
+        // Formas de conersão, para abri o nodejs presiona ctrl + crase e digita node
+
+        // Formatando string com placeholder
+        var nome = prompt('Digite um nome: ')
+        let idade = Number(window.prompt('Digite outro número: '))
+        window.alert(`Seu nome é ${nome} e sua idade é ${idade}`)
+
+        // Forma não convertida o sinal de + ta indo como concatenação
+        var n1 = window.prompt('Digite um número: ')
+        let n2 = window.prompt('Digite outro número: ')
+        const s = n1 + n2 
+        window.alert('a soma é' + s)
+
+        // Convertendo os números o primeiro converti para número inteiro o segundo para número flotuante/real forcei
+        var n3 = parseInt(prompt('Digite um número parceiro: '))
+        let n4 = Number.parseFloat(window.prompt('Digite outro número: '))
+        let so = n3 + n4 
+        window.alert('a soma é' + so)
+
+        // Convertend de forma mais simplificada o js se vira e descobre se é float ou inteiro
+        var n5 = Number(prompt('Digite um número amigo: '))
+        let n6 = Number(window.prompt('Digite outro número: '))
+        let som = n5 + n6 
+        window.alert('a soma é ' + som)
+
+        // Convertendo de nunero para sting
+        var n7 = Number(prompt('Digite um número amigo: '))
+        let n8 = Number(window.prompt('Digite outro número: '))
+        let soma = n7 + n8 
+        window.alert('A conversão se tornou em concatenação ' + soma.toString())
+
+        // Convertendo de nunero para sting 
+        var n9 = Number(prompt('Digite um número amigo: '))
+        let n10 = Number(window.prompt('Digite outro número: '))
+        let somas = n7 + n8 
+        window.alert('A conversão se tornou em concatenação ' + String(somas))
+        
+
+
+    </script>
+    
+</body>
+</html>
