@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    background-image: url('https://viewpro.pl/wp-content/uploads/2019/01/tlo-na-wymiar-wym-04-400x400.jpg');
+    background-repeat: no-repeat; 
+    background-size:cover; /*Preenchendo a tela toda */
+    background-position:center center;
+    font-family: 'helveticaNeueW01-55Roma,';
+}
+
+/*Cores do site*/
+
+#cor1{
+    margin-left: auto;
+    margin-right: auto;
+    width:20px;
+    height:20px;
+    background-color: #5f1e1c;
+    border-radius: 50%;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#cor1:hover{
+    background-color: #fff;
+}
+
+
+/*Menu*/
+h1 {
+    font-size: 16px;
+    margin: 25px 0px 10px 0px;
+    font-family:     'Helvetica Neue', sans-serif, sans-serif;
+}
+.menu, ul{
+    list-style: none;
+    color:rgb(0, 0, 0);
+    text-align:center;
+}
+nav ul li {
+    display: inline;
+    padding:10px;
+    color:rgb(226, 101, 101);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(185, 184, 184);
+}
+/*Home*/
+main{
+    max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+/*Galeria de fotos*/
+
+.galeria {
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-content: flex-start;
+    justify-content:space-around;
+}
+
+
+
+.sub-galeria-1 img{
+    width: 331px;
+    height:331px;
+}
+.sub-galeria-2 img{
+    width: 331px;
+    height:331px;
+}
+.sub-galeria-3 img{
+    width: 331px;
+    height:331px;
+}
+#img-6 {
+    border-radius: 100%;
+}
+
+/*Home*/
+.sobre-mim{
+    text-align: center; /*Centralizando todo elemento na tela*/
+}
+
+.sobre-mim  h2{
+    text-align: center; /*Centralizando todo elemento na tela*/
+    color: #5f481c;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+figure{
+    align-content: center;
+}
+img.leonardo{
+    padding: 20px;
+    background-color: #F5F5F5;
+    border: 10px solid #E4E2E2;
+    width: 300px; /*Tamanho da iamgem*/
+}
+
+.sobre-mim-p {
+    max-width: 500px; /*Tamanho do texto*/
+    margin-left: auto; /*Cetralizando o texto*/
+    margin-right: auto; /*Cetralizando o texto*/
+}
+
+
+
+img.pombo{
+    border: 10px solid #b8a276;
+    padding: 20px;
+    width: 200px; /*Tamanho da iamgem*/
+}
+
+
+
+/*Página de contato*/
+
+input{
+    width:200px;
+    height: 20px;
+}
+
+
+
+textarea{
+    width: 200px;
+    height: 50px;
+}
+
+@media(max-width:376px){
+    .galeria{
+
+    }
+
+}
+
+
+footer {
+    margin-top: 50px;
+    text-align:center;
+    margin-bottom:50px;
+}

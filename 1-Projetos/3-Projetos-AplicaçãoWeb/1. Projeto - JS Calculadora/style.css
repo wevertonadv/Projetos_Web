@@ -1,0 +1,55 @@
+*  {
+    margin: 0;
+    padding: 0; /*Padding é a distancia entre o elemento e nossa borda*/
+}
+
+.fundo {
+    background-image: url('alto-s-odyssey-mobile-game-4k-wallpaper-preview.jpg');
+    background-size: cover;
+    /*background-image: linear-gradient(45deg, rgb(0, 0, 0), #000000); /*Background liner 45 grau rosa para o laranja*/
+    height: 100vh;
+}
+
+#calculadora{
+    position: absolute;/*Assim ela vai ocupar apenas o espaço dela mesmo*/
+    /*background-image: linear-gradient(45deg, #131e35, #1A2232);*/
+    top: 50%; /*Distanciando 50% do topo*/
+    left: 50%; /*Distanciando 50% do lado esquerdo*/
+    transform: translate(-50%, -50%);/*Assim ele vai voltar 50% no eixo X e 50% no eixo y*/
+    padding: 15px;
+}
+
+#resultado{
+    background-color: #1A2232;
+    height: 80px;
+    width: cover;
+    color: white;
+    text-align: right;
+
+
+}
+
+button {
+    margin: 0;
+    background-color: #F1F1F1;
+    width: 90px;
+    height: 70px;
+    cursor: pointer;
+    border:none;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color: rgb(28, 74, 134);
+    color: white;
+    border: 10px solid black;
+
+}
+
+#zero {
+    width: 100%;
+}
+
+#igual {
+    height: 140px;
+}

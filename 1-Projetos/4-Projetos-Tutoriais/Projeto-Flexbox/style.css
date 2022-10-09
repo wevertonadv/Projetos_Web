@@ -1,14 +1,11 @@
 
-.div-pai{
-    display: flex;
-}
 .div1{
     background-color: aqua;
     width:150px;
     height:100px;
 }
 .div2{
-    background-color: black;
+    background-color: rgb(70, 185, 206);
     width:150px;
     height:100px;
 }
@@ -17,3 +14,4 @@
     width:150px;
     height:100px;
 }
+

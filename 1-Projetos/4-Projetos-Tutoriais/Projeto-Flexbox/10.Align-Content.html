@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>    
+
+        main{
+            margin-left: auto;
+            margin-right:  auto;
+            width: 1000px;
+        }
+        .pai-container{
+            display: flex;
+            display: flex-start;
+            justify-content:center; /*Alinhando no centro da div*/
+            background-color: rgb(211, 149, 149);
+            height:250px;
+        }
+
+        .pai-container2{
+            margin-top: 50px;
+            display: flex;
+            display: flex-start;
+            justify-content:center; /*Alinhando no centro da div*/
+            background-color: rgb(137, 158, 130);
+            height:250px;
+        }
+
+        .pai-container2{
+            margin-top: 50px;
+            display: flex;
+            display: flex-start;
+            justify-content:center; /*Alinhando no centro da div*/
+            background-color: rgb(137, 158, 130);
+            height:250px;
+        }
+
+        
+        .pai-container3{
+            margin-top: 50px;
+            display: flex;
+            display: flex-start;
+            flex-wrap: wrap; /*Quebrando para linha de baixo*/
+            align-content: flex-start;
+            justify-content:center; /*Alinhando no centro da div*/
+            background-color: rgb(81, 115, 138);
+            height:250px;
+        }
+
+        .pai-container4{
+            margin-top: 50px;
+            display: flex;
+            display: flex-start;
+            flex-wrap: wrap; /*Quebrando para linha de baixo*/
+            justify-content:center; /*Alinhando no centro da div*/
+            background-color: rgb(84, 68, 139);
+            height:250px;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>Align-content</h1>
+        <p>Align content serve para alinhar elementos em mais de uma linha</p>
+
+    <div class="pai-container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+
+        <p>Por padrão todos elementos vão se expremer para caber na div</p>
+    <div class="pai-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+
+    <div class="pai-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+
+    <div class="pai-container4">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</main>
+    
+</body>
+</html>
