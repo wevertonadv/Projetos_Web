@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+
 * {
     padding:0;
     margin:0;
 }
 
 body {
-    background-image: url('https://viewpro.pl/wp-content/uploads/2019/01/tlo-na-wymiar-wym-04-400x400.jpg');
+    /*background-image: url('https://viewpro.pl/wp-content/uploads/2019/01/tlo-na-wymiar-wym-04-400x400.jpg');*/
     background-repeat: no-repeat; 
     background-size:cover; /*Preenchendo a tela toda */
     background-position:center center;
@@ -34,9 +38,10 @@ body {
 
 /*Menu*/
 h1 {
-    font-size: 16px;
+    font-size: 30px;
     margin: 25px 0px 10px 0px;
-    font-family:     'Helvetica Neue', sans-serif, sans-serif;
+    font-family: 'Great Vibes', cursive;
+
 }
 .menu, ul{
     list-style: none;
@@ -47,6 +52,8 @@ nav ul li {
     display: inline;
     padding:10px;
     color:rgb(226, 101, 101);
+    font-family: 'Amita', cursive;
+
 }
 
 nav ul li a {
@@ -61,14 +68,14 @@ nav ul li a:hover {
 }
 /*Home*/
 main{
-    max-width:1200px;
+    max-width:1050px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 }
 /*Galeria de fotos*/
 
-.galeria {
+.sub-galeria-1 {
     margin-left:auto;
     margin-right: auto;
     display: flex;
@@ -76,22 +83,21 @@ main{
     align-self: flex-start;
     align-content: flex-start;
     justify-content:space-around;
+
 }
 
+#mona-lisa{
+}
 
 
 .sub-galeria-1 img{
+    margin-right: -2px;
+    padding:2px;
     width: 331px;
     height:331px;
 }
-.sub-galeria-2 img{
-    width: 331px;
-    height:331px;
-}
-.sub-galeria-3 img{
-    width: 331px;
-    height:331px;
-}
+
+
 #img-6 {
     border-radius: 100%;
 }
@@ -148,12 +154,92 @@ textarea{
     height: 50px;
 }
 
-@media(max-width:376px){
-    .galeria{
 
+
+
+
+
+
+
+
+@media(max-width:1007px){
+
+    main{
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
     }
 
+    .galeria {
+        max-width: 850px;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;        
+    }
+
+    .galeria img {
+    width:280px;      
+    }
+
+    .sub-galeria-1 img{
+        width: 220px;
+        height:220px;
+    }
+    .sub-galeria-2 img{
+        width: 220px;
+        height:220px;
+    }
+    .sub-galeria-3 img{
+        width: 220px;
+        height:220px;
+    }
 }
+
+@media(max-width:835px){
+
+    .galeria img {
+    width:280px;      
+    }
+
+    .sub-galeria-1 img{
+        width: 190px;
+        height:190px;
+    }
+    .sub-galeria-2 img{
+        width: 190px;
+        height:190px;
+    }
+    .sub-galeria-3 img{
+        width: 190px;
+        height:190px;
+    }
+}
+
+
+@media(max-width:724px){
+
+    main {
+    }
+    .galeria{
+    }
+    .galeria img {
+        width:280px;      
+        }
+    
+        .sub-galeria-1 img{
+            width: 190px;
+            height:190px;
+        }
+        .sub-galeria-2 img{
+            width: 190px;
+            height:190px;
+        }
+        .sub-galeria-3 img{
+            width: 190px;
+            height:190px;
+        }
+    }
 
 
 footer {

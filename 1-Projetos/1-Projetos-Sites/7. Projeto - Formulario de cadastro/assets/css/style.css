@@ -1,0 +1,222 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica
+}
+
+body{
+    width:100%;   /* Para ter a largura da tela toda */
+    height:100vh; /* Para ter a altura  da tela toda */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 174, 68);
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+}
+
+.form-image{
+    width:50%; /*50% de 80%*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    padding: 1rem;
+}
+
+.form-image img {
+    width:31rem; /* Tamanho da iamgem para caber na div*/
+}
+
+.form{
+    width:50%;
+    display:flex;
+    justify-content:center; /*Centralizando no meio da div em vertical*/
+    align-items: center;  /*Centralizando no meio da div em horizontal*/
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    padding: 30px
+}
+
+.form-header{
+    display:flex;
+    /*background-color:red;*/
+    margin-bottom:3rem;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.login-button {
+    display:flex;
+    align-items:center;
+}
+
+.login-button button {
+    border: none;
+    background-color: rgb(153, 115, 12);
+    padding:0.4rem 1rem;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: rgb(243, 201, 87);
+    color: #000;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:1000;
+
+}
+
+.login-button button a:hover {
+    color: rgb(2, 2, 2);
+}
+
+.form-header h1::after {
+    content: "";
+    display: block;
+    width:7rem;
+    height: 0.3rem;
+    background-color: rgb(143, 118, 7);
+    margin: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+
+.inpu-box{
+    display: flex;
+    /*background-color:red;*/
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.inpu-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius:10px;
+    box-shadow: 1px 1px 6px rgb(51, 104, 153);
+}
+
+.inpu-box input:hover {
+    background-color: #eeeeeeec;
+}
+
+.inpu-box input:focus-visible{
+    outline: 1px solid rgb(51, 104, 153); 
+}
+
+.inpu-box label, .gender-tile h6 {
+    font-size: 0.75rem;
+    font-weight:600;
+    color: rgb(51, 104, 153); 
+}
+
+.inpu-box input::placeholder{
+    color: rgb(31, 66, 99);
+}
+
+.gender-group {
+    display:flex;
+    justify-content:space-between;
+    margin: top 0.62rem;
+    padding: 0.5rem
+}
+
+.gender-input {
+    display:flex;
+    align-items:center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight:600;
+    color: #000;
+}
+
+.continue-button button {
+    width:100%;
+    border: none;
+    background-color: rgb(12, 36, 68);
+    padding: 0.62rem;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+ 
+    background-color: rgb(26, 58, 100);
+
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight:800;
+    color: #fff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image{
+        display: none;
+    }
+
+    .container {
+        width:  50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1064px) {
+    .container{
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .gender-inputs {
+        margin: top 2rem;
+    }
+
+    .gender-input {
+        margin: top 0.5rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+}
+
+
+
+
