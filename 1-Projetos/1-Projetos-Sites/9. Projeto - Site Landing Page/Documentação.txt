@@ -1,0 +1,10 @@
+margin: /* top right bottom left */
+margin: 0; /* margem de todos os lados = 0 */
+margin: 0 1px; /* top/bottom = 0; right/left = 1px */
+margin: 0 1px 2px; /* top = 0; right/left = 1px; bottom = 2px */
+margin: 0 1px 2px 3px; /* top = 0; right= 1px; bottom = 2px; left = 3px */
+
+margin: auto;
+Significa que o browser dará uma margem automática para todos os lados. A margem automática não irá funcionar em todas as ocasiões pois ela precisa de uma lógica para funcionar.
+
+Por exemplo, em um elemento que tenha display: block como é o default de uma div, colocando margin: 0 auto;, significa que você dará margens automáticas na esquerda e na direita para centralizar o bloco horizontalmente na tela

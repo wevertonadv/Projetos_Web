@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'arial';
+    background-color: rgb(34,   34,    34);
+    color: #fff;
+    max-width: 1200px; /*Colocando um tamanho porque se ficar muito grande vai ter a quebra de linha*/
+    margin: 0 auto; /* Centralizando no meio os elementos*/
+    padding: 15px;
+}
+
+header {
+    display: flex; /* Estou dizendo que o header é um flexbox */
+    flex-direction: row; /*Estou dizendo para os itens ficar na forma de linha automaticamente é column*/
+    justify-content: space-between; /*Isso aqui separa as div não os elementos */
+}
+
+.title{
+    font-family: 'arial';
+    font-weight: bold;
+}
+h1{
+    font-weight: 200px;
+}
+
+
+li {
+    font-family: 'arial';
+    list-style: none;
+    display: inline-block; /* Por padrão é block com o inline-block fica um do lado do outro*/
+    margin: 20px; 
+    font-size: 1.5em; 
+}
+
+li a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+li a:hover{
+    transition: 0.3s;
+    color: #9B06CE; 
+}
+
+li:nth-child(5) {
+    color:rgba(3, 231, 220, 0.533);
+    border: 2px solid #9B06CE;
+    padding:10px;
+    border-radius: 15px;
+}
+
+ul li a:hover:nth-child(5) {
+    background-color: #9B06CE;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px; 
+}
+
+span{
+    color: #9B06CE;
+    font-size: 1.2em;
+}
+    
+
+form {
+    margin-top:40px;
+}
+
+
+main {
+    display: flex; /*Deixando um do lado do outro os dois lados*/
+    margin-top: 90px;
+    justify-content: space-between;
+    
+}
+
+p {
+    line-height: 1.5em;
+    max-width: 500px; /*O tamnho do texto vai ter no maximo 500px*/
+    text-align: justify;
+}
+
+@media (max-width:825px){
+    .imagem {
+        display: none;
+    }
+
+    header{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+
+    h1 {
+        text-align: center;
+    }
+    header ul a {
+        font-size: 20px;
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 400px;
+    }
+    
+}
+form { /*Por padrão o formulario ocupa 100% da div*/
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    border: none;
+    margin-top: 10px;
+    border-radius:20px;
+    height:40px;
+    font-size: 16px;
+}
+
+form [type="submit"] {
+    width: 50%;
+    text-align: center;
+    align-items: center; 
+    align-self: center; /*Alinhando ele mesmo no centro*/
+}
+
+form [type="submit"]:hover {
+    transition: 0.5s;
+    cursor:pointer;
+    color: #fff;
+    background-color: #9B06CE;
+}
