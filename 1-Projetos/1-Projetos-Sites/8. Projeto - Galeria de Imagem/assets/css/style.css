@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/fundoCat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+   
+}
+
+img {
+    width:600px;
+    height:600px;
+}
+
+.container li {
+    width: 600px;
+    height: 600px;
+}
+.container li { /*li filho da classe container todo li dentro de container recebe esses estilos*/
+    list-style: none;
+    position: absolute;
+}
+
+.container img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    vertical-align:top;
+}
+
+.container input {
+    display: none;
+}
+
+.container label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+}
+
+.container li:nth-child(1) label{
+    left: 10px;
+}
+
+.container li:nth-child(2) label{
+    left: 40px;
+}
+
+.container li:nth-child(3) label{
+    left: 70px;
+}
+
+.container li:nth-child(4) label{
+    left: 100px;
+}
+
+.container img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+/*Créditos
+
+https://www.devmedia.com.br/como-criar-um-slider-com-css-e-html/37787
+
+*/
