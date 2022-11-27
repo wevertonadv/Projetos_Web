@@ -1,0 +1,31 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url('/assets/images/pexels-nappy-936137.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+.nav{
+    margin-top: 20px;
+    display: flex;
+    background-color: rgb(46, 46, 46);
+
+}
+.nav  li {
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    list-style: none;
+}
+
+ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+}
