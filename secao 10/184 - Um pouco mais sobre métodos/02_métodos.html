@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 0 - Métodos </title>
+</head>
+<body>
+    
+    <script>
+        // Aula 184.
+        // Normmalmente os métododos interagem com os objetos.
+        // Até mudando os valores das suas propiedades para corresponder a lógica do programa desenvolvido.
+        
+
+        let pessoa = {
+            nome: '',
+            setNome: function(novoNome) {
+                this.nome = novoNome;
+            },
+            getNome: function(){
+                return this.nomme;
+            }
+        }
+
+        pessoa.setNome('Weverton');
+
+        console.log(pessoa.getNome());
+
+        //*****
+
+        let cachorro = {
+            raca: 'SRD',
+            latir: function(){
+                console.log("Au au");
+            },
+            ruivar: function(){
+                console('Auuuuuuuuuuuuuuu')
+            },
+            setRaca: function(raca){ //mudei a raça
+                this.raca = raca
+            }
+        }
+        
+       console.log(cachorro.raca);
+       cachorro.setRaca('Pastor alemão');
+       console.log(cachorro.raca);
+    </script>
+</body>
+</html>
