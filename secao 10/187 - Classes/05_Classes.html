@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 05 - Classes </title>
+</head>
+<body>
+    
+    <script>
+        // 
+        // 
+        // 
+        let cachorro = {
+            patas: 4,
+            raca: 'SRD',
+            latir: function(){
+                console.log("Au Au");
+            }
+        }
+
+let labrador = Object.create(cachorro);
+
+labrador.latir()
+
+labrador.raca = "Labrador"
+
+console.log(labrador.raca)
+console.log(cachorro.raca)
+
+let pastor = Object.create(cachorro);
+
+pastor.raca = "Pastor alemão"
+
+console.log(pastor.raca)
+
+
+
+
+/*
+        // Em baixo é um objeto chamado gato
+        let gato = {
+
+        }
+
+        // Em baixo o objeto se tranformou em classe porque atribuimos propiedades
+        let gatos = {
+            patas: 4,
+            raca: 'SRD',
+            latir: function(){
+                console.log("Miau miau");
+            }
+}
+
+*/
+    </script>
+</body>
+</html>
