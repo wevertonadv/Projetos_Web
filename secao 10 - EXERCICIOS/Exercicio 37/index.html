@@ -9,36 +9,84 @@
 </head>
 
 <body>
-    <!--Crie um classe que simula uma conta no banco (utilize a forma que preferir)-->
-    <!-- E essa clase deve conter a propiedade saldo  -->
-    <!-- E depois criar os métodos deposito e saque deposito coloca o dinheiro na conta e saque retira-->
-    <!-- E depois vamos testar os métodos depositando e sacando -->
+    <!-- Devemos criar uma classe que simula um carrinho de compras (utilize a forma que preferir)-->
+    <!-- Devemos criar a propiedades itens e todos os itens deve ter nesse carrinho e a quantidade total-->
+    <!-- Devemos criar os métodos para adicionar e remover os itens-->
 
     <script>
+        class Carrinho {
+            constructor(itens, qtd, valorTotal) {
+                this.itens = itens;
+                this.qtd = qtd;
+                this.valorTotal = valorTotal;
+            }
 
-        class Conta {
-            constructor(saldo) {
-                this.saldo = saldo;
+            addItem(item) {
+
+                let contador = 0;
+                for (let itemCarrinho in this.itens) {
+                    if (this.itens[itemCarrinho].id == item.id) {
+                        this.itens[itemCarrinho].id == item.qtd;
+                        contador = 1;
+                    }
+                }
+
+                if(contador==0){
+                    this.itens.push(item)
+                }
+
+
+                this.qtd += item.qtd;
+                this.valorTotal += item.preco * item.qtd;
             }
-            deposito(valor) {
-                this.saldo += valor;
+        
+            removeItem(item){
+                for(let itemCarrinho in this.itens){
+                    if(this.itens[itemCarrinho].id == item.id) {
+
+                        let obj = this.itens[itemCarrinho];
+                        let index = this.itens.findIndex(function(obj){ return obj.id == item.id});
+
+                        this.qtd -= this.itens[itemCarrinho].qtd;
+                        this.valorTotal -= this.itens[itemCarrinho].preco * this.itens[itemCarrinho].qtd;
+
+                        this.itens.splice(index, 1);
+
+
+
+
+                    }
+                }
             }
-            saque(valor) {
-                this.saldo -= valor;
-            }
+        
         }
 
-        let conta = new Conta(1000)
+        let carrinho = new Carrinho([
+            {
+                id: 01,
+                nome: "Camisa",
+                qtd: 1,
+                preco: 20,
+            },
+            {
+                id: 02,
+                nome: "Cueca",
+                qtd: 3,
+                preco: 50
+            }
+        ], 3, 180)
 
-        conta.deposito(1000, 'Mais');
+        console.log(carrinho)
 
-        console.log(conta.saldo);
+        carrinho.addItem({id:01, nome: "Camisa", qtd:2, preco: 20});
+        console.log(carrinho)
 
-        conta.saque(500);
+        carrinho.addItem({id:03, nome: "Boné", qtd:1, preco: 15});
+        console.log(carrinho)
 
-        console.log(conta.saldo)
-        // Propiedade = var saldo
-        // Propiedade = this.saque
+        carrinho.removeItem({id:01, nome: "Camisa", qtd:1, preco: 20});
+        console.log(carrinho)
+
     </script>
 
 
