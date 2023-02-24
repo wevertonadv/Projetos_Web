@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 04- Exercicio 39</title>
+</head>
+
+<body>
+<!--Crie uma classe que simule uma conta bancaria; 
+    com as propiedades de saldo na conta corrente, 
+    saldo na conta poupança e juros da poupança; 
+    Crie os métodos de depósito e saque, também um método para transferir dinheiro da poupança para a corrente; 
+    Além disso crie uma conta especial que herda da conta normal; 
+    Na conta especial os juros são dobrados da conta normal;-->
+
+    <script>
+
+        class Carro {
+            constructor(marca, cor, gasolinaRestante, consumo) {
+                this.marca = marca;
+                this.cor = cor;
+                this.gasolinaRestante = gasolinaRestante;
+                this.consumo = consumo;
+            }
+
+            dirigir(km) {
+
+                let litrosConsumidos = km / this.consumo;
+
+                this.gasolinaRestante -= litrosConsumidos;
+            }
+
+            //Método abastecer
+            abastecer(l) {
+                this.golinaRestante += l;
+           }
+
+        }
+
+        //Instanciar um carro
+        let carro = new Carro("VW", "Cinza", 100, 14);
+        console.log(carro);
+
+        carro.dirigir(100);
+        console.log(carro);
+
+
+        carro.abastecer(10);
+        console.log(carro);
+    </script>
+
+
+</body>
+
+</html>

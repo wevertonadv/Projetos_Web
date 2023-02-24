@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 03- Exercicio 38</title>
+</head>
+
+<body>
+    <!--Crie um objeto que simula um endereço de um cliente-->
+    <!--Propiedades: Rua, Bairro,Cidade e Estado-->
+    <!--No construtor o endereço já deve ser definido por completo-->
+    <!--Crie métodos para atualizar todas as propiedades-->
+    <!--Crie métodos para atualizar todas as propiedades-->
+
+    <script>
+
+    var enderecos =   {
+            Rua: 'Rua Laplace',
+            Bairro: 'Saracuruna',
+            Cidade: 'Duque de Caxias',
+            Estado: 'Rio de janeiro'
+        }
+
+    class Endereco {
+        constructor(rua, bairro, cidade, estado) {
+            this.rua = rua;
+            this.bairro = bairro;
+            this.cidade = cidade;
+            this.estado = estado;
+        }
+
+        set novaRua(novaRua) {
+            this.rua = novaRua;
+        }
+
+        set novoBairro(novoBairro) {
+            this.bairro = novoBairro;
+        }
+    }
+
+    //Instanciar o class/objeto
+
+    let endereco = new Endereco("Rua laplace", "Saracuruna", "Duque de caxias", "Rio de janeiro" )
+    console.log(endereco)
+
+
+    endereco.novaRua = "Rua dos Pardais"
+    console.log(endereco)
+
+    endereco.novoBairro = "Jardim Primavera"
+    console.log(endereco)
+
+    </script>
+
+
+</body>
+
+</html>

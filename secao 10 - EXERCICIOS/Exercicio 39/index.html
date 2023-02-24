@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 04- Exercicio 39</title>
+</head>
+
+<body>
+<!--Crie uma classe que simule um carro;-->
+<!--Propiedades: Marca, cor, gasolina restante-->
+<!--Crie um método de dirigir o carro, que vá diminundo a gasolina gradativamente-->
+<!--E um de abaster para aumentar a gasolina quando necessario-->
+    <script>
+
+        class Carro {
+            constructor(marca, cor, gasolinaRestante, consumo) {
+                this.marca = marca;
+                this.cor = cor;
+                this.gasolinaRestante = gasolinaRestante;
+                this.consumo = consumo;
+            }
+
+            dirigir(km) {
+
+                let litrosConsumidos = km / this.consumo;
+
+                this.gasolinaRestante -= litrosConsumidos;
+            }
+
+            //Método abastecer
+            abastecer(l) {
+                this.golinaRestante += l;
+           }
+
+        }
+
+        //Instanciar um carro
+        let carro = new Carro("VW", "Cinza", 100, 14);
+        console.log(carro);
+
+        carro.dirigir(100);
+        console.log(carro);
+
+
+        carro.abastecer(10);
+        console.log(carro);
+    </script>
+
+
+</body>
+
+</html>
